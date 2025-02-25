@@ -45,7 +45,7 @@ namespace Epic.OnlineServices.RTCAudio
 			get
 			{
 				short[] value;
-				Helper.Get(m_Frames, out value, m_FramesCount);
+				Helper.Get(m_Frames, out value, m_FramesCount * m_Channels);
 				return value;
 			}
 
